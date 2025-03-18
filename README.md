@@ -81,3 +81,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+This project was originally developed by Mike Zawidzki at Lycée des Arts et Métiers in Luxembourg. I am building upon his work. For designs and further information, please contact him directly.
