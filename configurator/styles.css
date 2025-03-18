@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(13, 40px);
+    grid-template-rows: repeat(12, 40px);
+    gap: 1px;
+    background-color: #ccc;
+    padding: 1px;
+    width: fit-content;
+}
+
+.cell {
+    background-color: #fff;
+    border: 1px solid #eee;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+    transition: transform 0.1s ease-in-out;
+}
+
+.cell.selected {
+    border: 2px solid #000;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+.empty-cell {
+    background-color: #f8f8f8;
+}
+
+#wordList {
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+.word-item {
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 3px;
+    cursor: move;
+    user-select: none;
+}
+
+.word-item:hover {
+    opacity: 0.8;
+}
+
+.word-item.dragging {
+    opacity: 0.5;
+}
+
+#customWordInput {
+    margin: 10px 0;
+    padding: 5px;
+    width: 150px;
+}
+
+#addWordBtn {
+    display: block;
+    margin: 5px 0;
+}
+
+.cell.drag-over {
+    border: 2px dashed #000;
+}
+
+/* Word-specific colors */
+[data-word="ET"] { background-color: #FFB6C1; }
+[data-word="ASS"] { background-color: #98FB98; }
+[data-word="FËNNEF"] { background-color: #87CEEB; }
+[data-word="ZÉNG"] { background-color: #DDA0DD; }
+[data-word="VÉIEREL"] { background-color: #F0E68C; }
+[data-word="ZWANZEG"] { background-color: #F1168C; }
+[data-word="HALWER"] { background-color: #FFB347; }
+[data-word="FIR"] { background-color: #77DD77; }
+[data-word="OP"] { background-color: #AEC6CF; }
+[data-word="ENG"] { background-color: #B19CD9; }
+[data-word="ZWOU"] { background-color: #FFB7B2; }
+[data-word="DRAI"] { background-color: #90EE90; }
+[data-word="VÉIER"] { background-color: #E6E6FA; }
+[data-word="SECHS"] { background-color: #FFA07A; }
+[data-word="SIWEN"] { background-color: #87CEFA; }
+[data-word="AACHT"] { background-color: #DEB887; }
+[data-word="NÉNG"] { background-color: #98FF98; }
+[data-word="EELEF"] { background-color: #FFDAB9; }
+[data-word="ZWIELEF"] { background-color: #D8BFD8; }
+[data-word="AUER"] { background-color: #F0E68C; }
+
+#direction-display {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 8px 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.code-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.code-modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 800px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+pre {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    font-family: monospace;
+}
