@@ -8,6 +8,18 @@ A customizable RGB LED word clock that displays time in Luxembourgish, with spec
 
 This project creates a beautiful word clock using an addressable RGB LED strip arranged in a 13x12 matrix. The clock displays the current time in Luxembourgish phrases (e.g., "ET ASS HALWER ZWIELEF" for "It is half past eleven"), with smooth color transitions and special animations for holidays and events in Luxembourg.
 
+## Configurator Tool
+
+The word clock configurator is available online! You can design your own word layout without installing anything:
+
+**[➡️ Open Word Clock Configurator](https://schto173.github.io/arduino_word_clock_Lux/)**
+
+This web-based tool allows you to:
+- Arrange words by dragging and dropping
+- Add custom words for holidays or special events
+- Generate coordinate code for your Arduino sketch
+- Preview your layout in real-time
+
 ## Features
 
 - Displays time in Luxembourgish phrases
@@ -39,6 +51,8 @@ A web-based tool for customizing the word layout:
 - Add custom words for special occasions
 - Automatically generates coordinate code for the Arduino sketch
 - Preview your layout before uploading
+
+
 
 ## Hardware Requirements
 
